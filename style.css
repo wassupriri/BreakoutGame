@@ -1,0 +1,78 @@
+* {
+  font-family: "Germania One";
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #4fd5f6, #ffffff);
+  background-size: 300% 300%; 
+  animation: gradientAnimation 10s ease infinite;
+}
+
+#sound {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 600px;
+  left: 15px;
+  margin-left: 570px;
+  z-index: 3;
+}
+
+
+#gameover {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#youwon {
+  width: 300px;
+  position: absolute;
+  margin-left: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#youlose {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#restart {
+  position: absolute;
+  margin-top: 90px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 1.25em;
+  color: #FFF;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
